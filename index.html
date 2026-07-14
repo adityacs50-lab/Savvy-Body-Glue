@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="theme-color" content="#ec4d8a"/><title>Body Glue — Hold your own</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="responsive.css"/>
+  <link rel="stylesheet" href="webgl.css"/>
+  <link rel="stylesheet" href="product-photo.css"/>
+  <script src="product-photo.js" defer></script>
+</head>
+<body>
+  <div class="noise"></div><div id="cursor"></div><canvas id="liquid"></canvas>
+  <div class="preloader" id="preloader"><span>BODY GLUE</span><i></i><b>100%</b></div>
+  <header><a class="brand" href="#top">BODY<br><em>GLUE</em></a><nav><a href="#formula">Formula</a><a href="#ritual">Ritual</a><a href="#journal">Journal</a></nav><button id="bag" class="bag" aria-label="Open shopping bag">Bag <span>0</span></button></header>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow reveal">The art of staying put — 01</p>
+      <h1 class="hero-title"><span class="reveal">HOLD</span><span class="serif reveal">your own.</span></h1>
+      <div class="hero-copy reveal"><p>Invisible body adhesive that moves like a second skin. Made for the moments you mean to keep.</p><a class="text-link" href="#shop">Meet the formula <b>↘</b></a></div>
+      <canvas class="webgl-canvas" id="webglCanvas" aria-label="Interactive 3D Body Glue bottle"></canvas>
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="product-stage" id="productStage" aria-label="Interactive 3D product bottle">
+        <div class="shadow"></div><div class="bottle" id="bottle"><div class="cap"><i></i><i></i><i></i></div><div class="neck"></div><div class="glass"><div class="shine"></div><div class="label"><small>BODY</small><strong>GLUE</strong><em>SECOND SKIN<br>ADHESIVE</em><span>50 ML / 1.69 FL OZ</span></div><div class="bottom"></div></div></div>
+        <span class="drag-hint">DRAG TO ROTATE <b>↻</b></span>
+      </div>
+      <div class="hero-foot reveal"><span>SCROLL TO EXPLORE</span><i></i><span>© 2026 BODY GLUE</span></div>
+    </section>
+    <section class="marquee"><div>NO SLIP <i>✦</i> NO SHOW <i>✦</i> ALL YOU <i>✦</i> NO SLIP <i>✦</i> NO SHOW <i>✦</i> ALL YOU <i>✦</i></div></section>
+    <section class="manifesto" id="formula"><p class="eyebrow reveal">A new kind of hold — 02</p><h2 class="reveal">Unseen, <em>unshaken.</em><br>Unapologetically you.</h2><div class="manifesto-grid"><p class="reveal">Made to disappear under every look, while making space for every move. Our water-resistant, skin-first formula grips gently and lets go cleanly.</p><div class="stat reveal"><b>12H</b><span>of flexible hold</span></div><div class="stat reveal"><b>0%</b><span>stickiness after wear</span></div></div></section>
+    <section class="ingredients"><div class="ingredient-card reveal"><div class="molecule"><i></i><i></i><i></i><i></i><i></i></div><p>01 — Skin-first<br>and scent-free</p></div><div class="ingredients-copy"><p class="eyebrow reveal">The good stuff — 03</p><h2 class="reveal">Less fuss.<br><em>More you.</em></h2><ul class="reveal"><li>Dermatologist tested <b>+</b></li><li>Water & sweat resistant <b>+</b></li><li>Rinses off with warm water <b>+</b></li><li>Vegan & cruelty free <b>+</b></li></ul></div></section>
+    <section class="shop" id="shop"><div class="shop-image reveal"><div class="mini-bottle"><div class="mini-cap"></div><div class="mini-label">BODY<br><b>GLUE</b></div></div><p>Not your average<br>body adhesive.</p></div><div class="product-detail"><p class="eyebrow reveal">The original — 04</p><h2 class="reveal">Second Skin<br><em>Adhesive</em></h2><div class="detail-row reveal"><span>Colour</span><div class="swatches"><button class="swatch active" data-shade="Clear" data-color="#f5ecdf" aria-label="Clear"></button><button class="swatch rose" data-shade="Rose Tint" data-color="#efa9b9" aria-label="Rose Tint"></button><button class="swatch cocoa" data-shade="Cocoa Tint" data-color="#6d4637" aria-label="Cocoa Tint"></button></div><strong id="shade">Clear</strong></div><div class="detail-row reveal"><span>Size</span><strong>50 ml / 1.69 fl oz</strong></div><div class="buy-row reveal"><span>$34.00</span><button id="addCart" class="add">ADD TO BAG <b>↗</b></button></div><p class="fine reveal">Free domestic shipping on orders over $50.</p></div></section>
+    <section class="ritual" id="ritual"><p class="eyebrow reveal">Your ritual — 05</p><h2 class="reveal">Stick to your<br><em>own rules.</em></h2><div class="steps"><article class="step reveal"><span>01</span><div class="step-orb one"></div><h3>Prep</h3><p>Start fresh and dry. Clean skin is a good beginning.</p></article><article class="step reveal"><span>02</span><div class="step-orb two"></div><h3>Press</h3><p>Apply a whisper-thin layer and wait until tacky.</p></article><article class="step reveal"><span>03</span><div class="step-orb three"></div><h3>Play</h3><p>Place, press, and go wherever your body takes you.</p></article></div></section>
+    <section class="quote" id="journal"><p class="reveal">“I forgot I was wearing it.<br>Which is <em>exactly</em> the point.”</p><span class="reveal">— EMMA, NEW YORK</span></section>
+  </main>
+  <footer><a class="brand" href="#top">BODY<br><em>GLUE</em></a><p>For every body. Every idea.<br>Every after-hours plan.</p><a href="mailto:hello@bodyglue.example" class="text-link">Let’s stay in touch <b>↗</b></a><span>© BODY GLUE 2026</span></footer>
+  <aside class="cart" id="cart" aria-hidden="true"><button class="close" id="closeCart">×</button><p class="eyebrow">Your bag</p><div id="cartItems"><p class="empty">Your bag is ready when you are.</p></div><div class="cart-total"><span>Subtotal</span><b id="total">$0.00</b><button class="checkout">CHECKOUT <b>↗</b></button></div></aside><div class="scrim" id="scrim"></div>
+  <div class="toast" id="toast">Added to your bag <b>✦</b></div><script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script><script src="webgl.js"></script><script src="app.js"></script>
+</body></html>
