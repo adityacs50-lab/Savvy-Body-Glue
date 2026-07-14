@@ -1,0 +1,14 @@
+{
+  "name": "savvy-body-glue",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SAVVY Body Glue landing page",
+  "scripts": {
+    "dev": "npm run dev --prefix savvy-web",
+    "build": "npm run build --prefix savvy-web",
+    "preview": "npm run preview --prefix savvy-web"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
